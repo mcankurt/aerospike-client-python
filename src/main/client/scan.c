@@ -268,7 +268,7 @@ PyObject * AerospikeClient_ScanApply(AerospikeClient * self, PyObject * args, Py
 
 	// Invoke Operation
 	return AerospikeClient_ScanApply_Invoke(self, namespace, py_set, py_module,
-			py_function, py_args, py_policy, py_options, true);
+			py_function, py_args, py_policy, py_options, false);
 }
 
 /**
